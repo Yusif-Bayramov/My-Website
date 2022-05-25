@@ -134,7 +134,7 @@
   }
   .container1 ul li a {
     font-weight: normal;
-    color: rgba(255, 255, 255, 0.718);
+    color: rgb(225, 225, 225);
   }
   .container1 ul li a::after {
     content: "";
