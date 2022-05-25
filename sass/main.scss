@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap');
+@import "portfolio";
+@import "navbar";
+@import "header";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+    transition: all .3s;
+}
+
+.spiner {
+    /* From https://css.glass */
+    background: rgba(6, 6, 6, 0.77);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(14.3px);
+    -webkit-backdrop-filter: blur(14.3px);
+    width: 100%;
+    height: 100vh;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    flex-direction: column;
+    font-size: 1.3rem;
+    .spinner-grow {
+        color: #ffff;
+    }
+    span {
+        margin-top: 5px;
+        color: rgb(255, 255, 255) !important;
+    }
+}

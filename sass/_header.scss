@@ -1,0 +1,286 @@
+    header {
+        width: 100%;
+        height: 100vh;
+        background-image: url(/img/gradienta-OzfD79w8ptA-unsplash.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    // TYPEWRITE
+    .tybw {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 12%;
+        .type-writer-c {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: #fff;
+        }
+        h1 {
+            font-size: 4.5rem !important;
+        }
+        .typewrite {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        .c1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .ad {
+                font-weight: 600;
+            }
+            .btnd {
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                color: #fff;
+                padding: .5rem;
+                margin-top: 1.8rem;
+                font-size: 1.8rem;
+                text-align: center;
+                background: transparent;
+                position: relative;
+                transition: all .3s ease-in-out;
+                border: none;
+                border: 1px solid #fff;
+                border-radius: 5px;
+                display: inline-block;
+                margin: 0 0.5rem;
+                animation: pulse infinite;
+                /* referring directly to the animation's @keyframe declaration */
+                animation-duration: 2s;
+                /* don't forget to set a duration! */
+                z-index: 1;
+                &::after {
+                    width: 0;
+                    height: 0;
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    background-color: rgb(255, 255, 255);
+                    z-index: -1;
+                    transition: all .3s ease-in-out;
+                    border-radius: 5px;
+                }
+                &:hover::after {
+                    width: 100%;
+                    height: 100%;
+                }
+                &:hover {
+                    color: black;
+                }
+            }
+        }
+    }
+    
+    // SILDER
+    #silder-container {
+        width: 250px;
+        height: 250px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        cursor: pointer;
+        #back,
+        #next {
+            opacity: 0;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(238, 238, 238, 0.678);
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 100%;
+            font-size: 18px;
+            cursor: pointer;
+            z-index: 999;
+            position: absolute;
+            top: calc(50% - 15px);
+        }
+        #back {
+            left: 15px;
+        }
+        #next {
+            right: 15px;
+        }
+        #slider {
+            width: fit-content;
+            display: flex;
+            height: 400px;
+            position: relative;
+            left: 0;
+            transition: all .5s ease;
+            .slide {
+                width: 250px;
+                height: 250px;
+                background-size: cover;
+                background-position: center center;
+                background-attachment: fixed;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #ffff;
+                h1 {
+                    font-size: 9.5rem !important;
+                }
+            }
+        }
+    }
+    
+    p {
+        margin-left: -55px;
+    }
+    
+    @-webkit-keyframes ani-mouse {
+        0% {
+            opacity: 1;
+            top: 29%;
+        }
+        15% {
+            opacity: 1;
+            top: 50%;
+        }
+        50% {
+            opacity: 0;
+            top: 50%;
+        }
+        100% {
+            opacity: 0;
+            top: 29%;
+        }
+    }
+    
+    @-moz-keyframes ani-mouse {
+        0% {
+            opacity: 1;
+            top: 29%;
+        }
+        15% {
+            opacity: 1;
+            top: 50%;
+        }
+        50% {
+            opacity: 0;
+            top: 50%;
+        }
+        100% {
+            opacity: 0;
+            top: 29%;
+        }
+    }
+    
+    @keyframes ani-mouse {
+        0% {
+            opacity: 1;
+            top: 29%;
+        }
+        15% {
+            opacity: 1;
+            top: 50%;
+        }
+        50% {
+            opacity: 0;
+            top: 50%;
+        }
+        100% {
+            opacity: 0;
+            top: 29%;
+        }
+    }
+    
+    .scroll-btn {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        margin-top: 5%;
+        margin-left: 4%;
+    }
+    
+    .scroll-btn>* {
+        display: inline-block;
+        line-height: 18px;
+        font-size: 13px;
+        font-weight: normal;
+        color: #7f8c8d;
+        color: #ffffff;
+        font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        letter-spacing: 2px;
+    }
+    
+    .scroll-btn>*:hover,
+    .scroll-btn>*:focus,
+    .scroll-btn>*.active {
+        color: #ffffff;
+    }
+    
+    .scroll-btn>*:hover,
+    .scroll-btn>*:focus,
+    .scroll-btn>*:active,
+    .scroll-btn>*.active {
+        opacity: 0.8;
+        filter: alpha(opacity=80);
+    }
+    
+    .scroll-btn .mouse {
+        position: relative;
+        display: block;
+        width: 27px;
+        height: 47px;
+        margin: 0 auto 20px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        border: 3px solid white;
+        border-radius: 23px;
+    }
+    
+    .scroll-btn .mouse>* {
+        position: absolute;
+        display: block;
+        top: 29%;
+        left: 50%;
+        width: 8px;
+        height: 8px;
+        margin: -4px 0 0 -4px;
+        background: white;
+        border-radius: 50%;
+        -webkit-animation: ani-mouse 2.5s linear infinite;
+        -moz-animation: ani-mouse 2.5s linear infinite;
+        animation: ani-mouse 2.5s linear infinite;
+    }
+    
+    @media (min-width: 576px) {
+        .tybw {
+            margin-top: 10%;
+        }
+        .tybw {
+            .type-writer-c {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-direction: row;
+                color: #fff;
+            }
+        }
+        .scroll-btn {
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            text-align: center;
+            margin-top: 7%;
+            margin-left: 0;
+        }
+    }
