@@ -376,6 +376,11 @@ p {
   letter-spacing: 2px;
 }
 
+.scroll-btn p {
+  position: relative;
+  left: 3px;
+}
+
 .scroll-btn > *:hover,
 .scroll-btn > *:focus,
 .scroll-btn > *.active {
