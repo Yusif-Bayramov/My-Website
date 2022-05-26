@@ -1,5 +1,15 @@
-.container {
+.header-nav {
     padding-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    width: 90%;
+    position: fixed;
+    top: 1.5rem;
+    z-index: 100;
 }
 
 .container1 {
@@ -13,7 +23,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 100;
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
