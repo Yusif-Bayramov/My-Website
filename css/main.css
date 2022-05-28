@@ -496,6 +496,9 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  opacity: 0;
+  transform: scale(0.1);
+  transition: all 1s ease-in-out;
 }
 #content .about-c .img-c {
   flex-basis: 100%;
@@ -614,6 +617,9 @@ header {
 }
 #s-b .wrapper {
   min-width: 100%;
+  opacity: 0;
+  transform: scale(0.1);
+  transition: all 1s ease-in-out;
 }
 #s-b .w-container {
   width: 100%;
