@@ -825,6 +825,7 @@ nav {
 html {
   font-size: 10px;
   letter-spacing: 0.5px;
+  scroll-behavior: smooth;
 }
 
 img {
