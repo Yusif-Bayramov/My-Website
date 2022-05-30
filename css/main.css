@@ -1,4 +1,114 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap");
+.porh {
+  width: 100%;
+  height: 60vh;
+  background-image: url(../img/pback.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.porh .potext {
+  padding-top: 8%;
+}
+.porh .moused {
+  padding-top: 45%;
+}
+
+#pcont {
+  background-color: #17202A;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 2%;
+}
+#pcont .card {
+  text-decoration: none;
+  border: none;
+  width: 50%;
+  height: 270px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  position: relative;
+}
+#pcont .card::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #0f3c6e;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+#pcont .card::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f00e";
+  font-size: 3.5rem;
+  color: rgb(255, 255, 255);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#pcont .card:hover::after {
+  opacity: 0.5;
+}
+#pcont .card:hover::before {
+  opacity: 1;
+}
+#pcont .w1 {
+  background-image: url(../img/oreo.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#pcont .w2 {
+  background-image: url(../img/wb4.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#pcont .w3 {
+  background-image: url(../img/trade.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#pcont .w4 {
+  background-image: url(../img/wdl.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#pcont .card-ct {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#pcont .scrl {
+  opacity: 0;
+  transform: scale(0.1);
+  transition: all 1s ease-in-out;
+}
+
+@media (min-width: 576px) {
+  .porh .potext {
+    padding-top: 0;
+  }
+  .porh .moused {
+    padding-top: 0;
+  }
+}
 .header-nav {
   padding-top: 1.5rem;
   display: flex;
@@ -171,13 +281,14 @@ nav {
     margin-left: 10px;
   }
 }
-header {
+.homeh {
   width: 100%;
   height: 100vh;
-  background-image: url(../img/bg.jpg);
+  background-image: url(../img/hbck.jpg.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .tybw {

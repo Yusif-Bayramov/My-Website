@@ -7,10 +7,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio</title>
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 </head>
 
 <body>
+    <div class="spiner">
+        <div class="spinner-grow" style="width: 3rem; height: 3rem;" role="status">
+        </div>
+        <span>Loading...</span>
+    </div>
+    <header class="porh">
+        <div class="header-nav">
+            <nav>
+                <div class="container1">
+                    <div class="lg">
+                        <h4><i class="fa-solid fa-code"></i></h4>
+                    </div>
+                    <div class="menu-c">
+                        <ul id="ul">
+                            <li id="home"><a href="/index.html">Home</a></li>
+                            <li><a href="/index.html">About</a></li>
+                            <li><a href="./index/portfolio.html" class="active">Portfolio</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
 
+                        <span id="colsebtn"><i class="fa-solid fa-x"></i></span>
+                    </div>
+                </div>
+                <div id="main">
+                    <div class="lg">
+                        <h4><i class="fa-solid fa-code"></i></h4>
+                    </div>
+                    <span id="openbtn"><i class="fa-solid fa-bars"></i></span>
+                </div>
+            </nav>
+        </div>
+        <div class="container tybw potext">
+            <div class="type-writer-c">
+                <div class="c1">
+                    <h1 class="lead">Portfolio</h1>
+                </div>
+            </div>
+            <div class="moused">
+                <span class="scroll-btn">
+                <a href="#pcont">
+                    <span class="mouse">
+                        <span>
+                        </span>
+                </span>
+                </a>
+                <p>scroll me</p>
+                </span>
+            </div>
+        </div>
+    </header>
+    <main id="pcont">
+        <section id="portfolio">
+            <div class="container card-ct">
+                <a target="_blank" href="/isler/Oreo Web design/index.html" class="card w1">
+                    <div>
+                        <div class="card-text"></div>
+                    </div>
+                </a>
+                <a target="_blank" href="/isler/qulaqciq/index.html" class="card w2">
+                    <div>
+                        <div class="card-text"></div>
+                    </div>
+                </a>
+            </div>
+            <br>
+            <div class="container card-ct scrl">
+                <a target="_blank" href="/isler/trade/index.html" class="card w3">
+                    <div>
+                        <div class="card-text"></div>
+                    </div>
+                </a>
+                <a href="/isler/webdaliy/webdaly.html" target="_blank" class="card w4">
+                    <div>
+                        <div class="card-text"></div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+    <script src="/js/portfolio.js"></script>
+    <script src="/js/navbar.js"></script>
+    <script src="/js/home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist./js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/type-writer.js"></script>
 </body>
 
 </html>
