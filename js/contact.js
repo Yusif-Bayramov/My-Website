@@ -11,5 +11,5 @@ window.addEventListener("scroll", () => {
         scrolltop.style.opacity = "0";
         skils.style.opacity = "0";
         skils.style.transform = "scale(0.1)";
-    }
+    };
 });

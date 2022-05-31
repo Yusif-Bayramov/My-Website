@@ -1,5 +1,3 @@
-"use strict";
-
 const openb = document.querySelector("#openbtn");
 const closeb = document.querySelector("#colsebtn");
 const c = document.querySelector(".container1");
@@ -8,8 +6,6 @@ const ul = document.querySelector("#ul")
 const lg = document.querySelector(".lg");
 
 
-
-// Create a match function
 function myFunction(x) {
     if (x.matches) {
         c.style.width = "0"

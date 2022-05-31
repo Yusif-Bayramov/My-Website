@@ -1,5 +1,6 @@
     #content {
         background-color: #17202A;
+        padding: 15px 0;
         #s-a {
             width: 100%;
             height: 550px;
@@ -126,6 +127,7 @@
     
     @media (min-width: 576px) {
         #content {
+            padding: 0;
             #s-a {
                 width: 100%;
                 height: 70vh;
@@ -145,7 +147,7 @@
                     flex-basis: 50%;
                     text-align: start;
                     p {
-                        font-size: 2.4rem;
+                        font-size: 2.2rem;
                     }
                     .readbtn {
                         margin-left: -10rem;
