@@ -7,6 +7,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  position: relative;
 }
 .porh .potext {
   padding-top: 8%;
@@ -39,9 +40,11 @@
   background-color: #0f3c6e;
   opacity: 0;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #pcont .card::before {
-  content: "";
   width: 100%;
   height: 100%;
   position: absolute;
@@ -289,6 +292,28 @@ nav {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  position: relative;
+}
+
+.scrolltop {
+  z-index: 1;
+  opacity: 0;
+  position: fixed;
+  bottom: 10px;
+  right: 25px;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.scrolltop a {
+  color: #fff;
+  text-decoration: none;
+}
+.scrolltop a:hover {
+  color: rgba(255, 255, 255, 0.76);
+}
+.scrolltop a i {
+  font-size: 3.5rem;
 }
 
 .tybw {

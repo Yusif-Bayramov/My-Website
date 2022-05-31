@@ -5,6 +5,23 @@ const next = document.querySelector("#next");
 const slider = document.querySelector("#slider");
 const sliderContainer = document.querySelector("#silder-container");
 const max = document.querySelectorAll(".slide").length - 1;
+const scrolltop = document.querySelector(".scrolltop");
+
+window.addEventListener("scroll", () => {
+    let scroll = document.querySelector("#content");
+    let cposition = scroll.getBoundingClientRect().top;
+    let sposition = window.innerHeight / 2;
+    if (cposition < sposition) {
+        scrolltop.style.opacity = "1";
+
+    } else {
+        scrolltop.style.opacity = "0";
+    }
+});
+
+
+
+
 
 function sliderfunc() {
     if (counter < max) {
