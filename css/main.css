@@ -925,6 +925,8 @@ nav {
   align-items: center;
   flex-direction: column-reverse;
   justify-content: center;
+  transform: scale(0.1);
+  transition: all 1s ease-in-out;
 }
 #ccont .form-c input,
 #ccont .form-c textarea {
