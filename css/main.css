@@ -896,6 +896,14 @@ nav {
   font-size: 1.3rem;
 }
 
+.c-h-c {
+  background-image: url(../img/conback.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 #ccont {
   width: 100%;
   height: 100%;
