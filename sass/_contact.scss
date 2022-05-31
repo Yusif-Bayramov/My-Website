@@ -1,0 +1,100 @@
+    #ccont {
+        width: 100%;
+        height: 100%;
+        padding: 1.7rem;
+        background-color: #17202A;
+        color: #fff;
+        font-size: 1.5rem;
+        .single_address {
+            i {
+                padding-bottom: 10%;
+            }
+        }
+        .address {
+            text-align: center;
+        }
+        .btn-c {
+            margin-top: 5%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .p-head {
+            padding-top: 2% !important;
+            padding-bottom: 2%;
+        }
+        form {
+            margin-top: 5%;
+        }
+        .form-c {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column-reverse;
+            justify-content: center;
+            input,
+            textarea {
+                border-radius: 10px;
+                background: rgba(255, 255, 255, 0.2);
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(5px);
+                -webkit-backdrop-filter: blur(5px);
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                color: #fff;
+                padding: 10px;
+                font-size: 1.4rem;
+            }
+            .btn {
+                margin-top: 2%;
+                font-size: 1.6rem;
+                border: 1px solid #fff;
+                transition: all .3s ease-in-out;
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+            form {
+                flex-basis: 100%;
+            }
+        }
+        .form-group {
+            margin-bottom: 2%;
+        }
+        #contact {
+            transform: scale(0.1);
+            transition: all 1s ease-in-out;
+        }
+        .btn {
+            color: #fff;
+        }
+    }
+    
+    @media (min-width: 576px) {
+        #ccont {
+            .form-c {
+                width: 100%;
+                height: 80vh;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                flex-direction: row;
+            }
+            .address {
+                text-align: start;
+            }
+            .form-c {
+                form {
+                    flex-basis: 30%;
+                }
+            }
+            form {
+                margin-top: 0;
+            }
+        }
+        .btn-c {
+            margin-top: 0;
+            display: flex;
+            align-items: stretch;
+            justify-content: start;
+        }
+    }

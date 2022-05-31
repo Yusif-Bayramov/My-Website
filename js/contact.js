@@ -1,5 +1,5 @@
 window.addEventListener("scroll", () => {
-    let skils = document.querySelector(".scrl");
+    let skils = document.querySelector("#contact");
     let scrolltop = document.querySelector(".scrolltop");
     let cposition = skils.getBoundingClientRect().top;
     let sposition = window.innerHeight / 1;
