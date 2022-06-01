@@ -91,6 +91,12 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+#pcont .w5 {
+  background-image: url(../img/wb5.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 #pcont .card-ct {
   display: flex;
   align-items: center;
@@ -98,6 +104,11 @@
   gap: 15px;
 }
 #pcont .scrl {
+  opacity: 0;
+  transform: scale(0.1);
+  transition: all 1s ease-in-out;
+}
+#pcont .scrl2 {
   opacity: 0;
   transform: scale(0.1);
   transition: all 1s ease-in-out;
