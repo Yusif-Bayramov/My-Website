@@ -25,6 +25,17 @@ img {
 body {
     font-family: 'Lato', sans-serif;
     font-family: 'Roboto', sans-serif;
+    &::-webkit-scrollbar {
+        width: 1rem;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: #36414d;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: #17202A;
+        border-radius: .5rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
 }
 
 ul {
