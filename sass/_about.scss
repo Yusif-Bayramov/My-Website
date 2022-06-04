@@ -14,7 +14,7 @@
             justify-content: center;
             flex-direction: column;
             opacity: 0;
-            transform: scale(0.1);
+            transform: translate(-100%);
             transition: all 1s ease-in-out;
             .img-c {
                 flex-basis: 100%;

@@ -41,22 +41,18 @@ window.addEventListener("scroll", () => {
     }
 });
 
-
 let filul = document.querySelector(".fillter-l")
 let filterc = filul.querySelectorAll("li")
 filterc.forEach(element => {
     element.addEventListener("click", function() {
         filterc.forEach(nav => nav.classList.remove(("activef")))
         this.classList.add("activef")
-
         let list = document.querySelectorAll(".fillter-l li");
         let itembox = document.querySelectorAll(".card");
-
         let dataFilter = this.getAttribute("data-filter");
         for (let k of itembox) {
             k.classList.remove("activev");
             k.classList.add("hide");
-
             if (k.getAttribute("data-item") == dataFilter || dataFilter == "all") {
                 k.classList.remove("hide");
                 k.classList.add("activev");

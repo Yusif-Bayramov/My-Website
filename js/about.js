@@ -17,10 +17,10 @@ window.addEventListener("scroll", () => {
     let sposition = window.innerHeight / 1;
     if (cposition < sposition) {
         scroll.style.opacity = "1";
-        scroll.style.transform = "scale(1)";
+        scroll.style.transform = "translate(0)";
     } else {
         scroll.style.opacity = "0";
-        scroll.style.transform = "scale(0.1)";
+        scroll.style.transform = "translate(-100%)";
     }
 });
 
