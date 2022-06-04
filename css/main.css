@@ -364,6 +364,15 @@ nav {
   color: #fff;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+  animation: sy 0.5s infinite alternate;
+}
+@keyframes sy {
+  0% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 .scrolltop a {
   color: #fff;
@@ -374,6 +383,7 @@ nav {
 }
 .scrolltop a i {
   font-size: 3.5rem;
+  transition: all 0.3s ease-in-out;
 }
 
 .tybw {
