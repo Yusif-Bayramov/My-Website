@@ -80,24 +80,34 @@
         </a>
     </div>
     <main id="pcont">
+        <div class="filter">
+            <ul class="fillter-l">
+                <li data-filter="all" class="activef">All</li>
+                <li data-filter="ofise">Ofise</li>
+                <li data-filter="trade">Trade</li>
+                <li data-filter="game">Game</li>
+            </ul>
+        </div>
         <section id="portfolio">
-            <div class="container card-ct">
-                <a target="_blank" href="../isler/Oreo Web design/index.html" class="card w1">
-                </a>
-                <a target="_blank" href="../isler/qulaqciq/index.html" class="card w2">
-                </a>
-            </div>
-            <br>
-            <div class="container card-ct scrl">
-                <a target="_blank" href="../isler/trade/index.html" class="card w3">
-                </a>
-                <a href="../isler/webdaliy/webdaly.html" target="_blank" class="card w4">
-                </a>
-            </div>
-            <br>
-            <div class="container card-ct scrl2" data-color="red">
-                <a target="_blank" href="../isler/Ineract/index.html" class="card w5">
-                </a>
+            <div class="card-pc">
+                <div class="container card-ct scrl1">
+                    <a target="_blank" data-item="ofise" href="../isler/Oreo Web design/index.html" class="card w1">
+                    </a>
+                    <a target="_blank" data-item="game" href="../isler/qulaqciq/index.html" class="card w2">
+                    </a>
+                </div>
+                <br>
+                <div class="container card-ct scrl">
+                    <a target="_blank" data-item="trade" href="../isler/trade/index.html" class="card w3">
+                    </a>
+                    <a href="../isler/webdaliy/webdaly.html" data-item="ofise" target="_blank" class="card w4">
+                    </a>
+                </div>
+                <br>
+                <div class="container card-ct scrl2" data-color="red">
+                    <a target="_blank" href="../isler/Ineract/index.html" data-item="ofise" class="card w5">
+                    </a>
+                </div>
             </div>
         </section>
     </main>
