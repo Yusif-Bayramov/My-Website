@@ -5,7 +5,6 @@ const m = document.querySelector("#main");
 const ul = document.querySelector("#ul")
 const lg = document.querySelector(".lg");
 
-
 function myFunction(x) {
     if (x.matches) {
         c.style.width = "0"
@@ -51,4 +50,14 @@ navbar.forEach(element => {
         navbar.forEach(nav => nav.classList.remove(("active")))
         this.classList.add("active")
     });
+});
+
+window.addEventListener("scroll", () => {
+    const incatorbar = document.querySelector(".scroll-indicator-bar");
+
+    const pageScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrollValue = (pageScroll / height) * 100;
+
+    incatorbar.style.width = scrollValue + "%";
 });
