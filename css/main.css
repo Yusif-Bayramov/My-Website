@@ -55,9 +55,13 @@
   border: none;
   width: 50%;
   height: 270px;
-  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
   position: relative;
   transition: all 0.3s ease-in-out;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.6px);
+  -webkit-backdrop-filter: blur(8.6px);
 }
 #pcont .card::after {
   content: "";
@@ -66,7 +70,11 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #0f3c6e;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.6px);
+  -webkit-backdrop-filter: blur(8.6px);
   opacity: 0;
   transition: all 0.3s ease-in-out;
   display: flex;
@@ -136,17 +144,17 @@
 #pcont .scrl {
   opacity: 0;
   transform: scale(0.1);
-  transition: all 0.5s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 #pcont .scrl2 {
   opacity: 0;
   transform: scale(0.1);
-  transition: all 0.5s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 #pcont .scrl1 {
   opacity: 0;
   transform: scale(0.1);
-  transition: all 0.5s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 @media (min-width: 576px) {
