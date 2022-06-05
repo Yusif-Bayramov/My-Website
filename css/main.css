@@ -22,7 +22,7 @@
   padding: 2.5rem;
 }
 #pcont .card-pc a.hide {
-  opacity: 0;
+  display: none;
 }
 #pcont .filter {
   display: flex;
@@ -57,6 +57,7 @@
   height: 270px;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
   position: relative;
+  transition: all 0.3s ease-in-out;
 }
 #pcont .card::after {
   content: "";

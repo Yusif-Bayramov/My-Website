@@ -21,7 +21,7 @@
     padding: 2.5rem;
     .card-pc {
         a.hide {
-            opacity: 0;
+            display: none;
         }
     }
     .filter {
@@ -57,6 +57,7 @@
         height: 270px;
         box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
         position: relative;
+        transition: all .3s ease-in-out;
         &::after {
             content: "";
             width: 100%;
