@@ -52,12 +52,12 @@ filterc.forEach(element => {
         for (let k of itembox) {
             k.classList.remove("activev");
             k.classList.add("hide");
-            k.style.transform = "rotate(180deg)"
+            k.style.transform = "scale(0.1)";
             if (k.getAttribute("data-item") == dataFilter || dataFilter == "all") {
                 k.classList.remove("hide");
                 k.classList.add("activev");
                 setTimeout(() => {
-                    k.style.transform = "rotate(360deg)"
+                    k.style.transform = "scale(1)";
                 }, 0);
             }
         }
