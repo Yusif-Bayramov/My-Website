@@ -13,11 +13,12 @@
     .w-container {
         width: 100%;
         padding: 30px 30px 50px;
-        background-color: #17202A;
-        border: 2px solid rgba(255, 255, 255, 0.06);
-        border-radius: 10px;
-        box-shadow: #17202A 3px 3px 6px 0px inset, #17202a -3px -3px 6px 1px inset;
-        backdrop-filter: blur(10px);
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.047);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
     }
     .w-container * {
         font-family: "Poppins", sans-serif;

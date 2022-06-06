@@ -15,8 +15,20 @@
     }
 }
 
+.portbg {
+    background-image: url(../img/pback.jpg) !important;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 #pcont {
-    background-color: #17202A;
+    background-image: url(../img/pback.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     width: 100%;
     padding: 2.5rem;
     .card-pc {
