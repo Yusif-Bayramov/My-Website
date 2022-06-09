@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>FORM</title>
+</head>
+
+<body>
+    <!--form-->
+    <form id="form">
+        <div class="form-c">
+            <div class="name">
+                <label for="text">Full Name</label>
+                <input type="text" name="name" id="name" pattern="[A-Za-z\s]*">
+            </div>
+            <div class="pass-c">
+                <div class="pass">
+                    <label for="password" class="ps">Password</label>
+                    <input type="password" name="" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                </div>
+                <button id="btn"><i class="fa-solid fa-eye-slash"></i></button>
+            </div>
+            <button id="btn2">Log In</button>
+        </div>
+    </form>
+    <!--Profil-->
+    <div class="wb">
+        <h4 id="w">
+            Login Error
+        </h4>
+        <h4 id="q">
+            Login Successful
+        </h4>
+    </div>
+    <div id="profil">
+        <h1>Profil</h1>
+        <h4 id="p">Full Name:</h4>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

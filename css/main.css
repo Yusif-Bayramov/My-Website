@@ -31,7 +31,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
-  padding: 2.5rem;
+  padding: 0;
 }
 #pcont .card-pc a.hide {
   display: none;
@@ -46,15 +46,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: scroll;
 }
 #pcont .filter .fillter-l li {
-  margin-right: 5%;
+  margin-right: 0;
   font-size: 1.6rem;
   color: #fff;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   text-align: center;
-  padding: 5px 15px;
+  padding: 5px 8px;
 }
 #pcont .filter .fillter-l .activef {
   border-radius: 10px;
@@ -147,6 +148,18 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+#pcont .w6 {
+  background-image: url(../img/loginform.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#pcont .w7 {
+  background-image: url(../img/login2.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 #pcont .card-ct {
   display: flex;
   align-items: center;
@@ -168,8 +181,29 @@
   transform: scale(0.1);
   transition: all 1s ease-in-out;
 }
+#pcont .scrl3 {
+  opacity: 0;
+  transform: scale(0.1);
+  transition: all 1s ease-in-out;
+}
 
 @media (min-width: 576px) {
+  #pcont {
+    padding: 2.5rem;
+  }
+  #pcont .filter .fillter-l {
+    overflow: auto;
+  }
+  #pcont .filter .fillter-l li {
+    margin-right: 0;
+    font-size: 1.6rem;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    padding: 5px 20px;
+  }
+
   .porh .potext {
     padding-top: 10%;
   }
@@ -550,6 +584,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 2;
 }
 .lefti-c .leftiocn {
   display: flex;
@@ -1149,6 +1184,7 @@ body::-webkit-scrollbar-thumb {
 
 ul {
   list-style: none;
+  padding-left: 0 !important;
 }
 
 a {

@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+    letter-spacing: 2px;
+}
+
+body {
+    background-image: url("4k.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#loginpage {
+    text-align: center;
+    position: relative;
+    top: 210px;
+}
+
+#loginpage h1 {
+    position: relative;
+    bottom: 25px;
+    color: white;
+    transition: 0.8s;
+}
+
+
+#loginpage .box {
+    padding: 12px;
+    padding-right: 150px;
+    transition: 0.8s;
+    border-radius: 20px;
+    opacity: 0.8;
+    border: none;
+    outline: none;
+
+}
+
+#loginpage .box::placeholder {
+    color: rgb(0, 0, 0);
+    opacity: 10;
+}
+
+#loginpage input[type="submit"] {
+    padding: 12px;
+    padding-left: 125px;
+    padding-right: 125px;
+    border-radius: 20px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    background-color: #FDEBD0;
+    color: black;
+    transition: 0.8s;
+}
+
+#loginpage input[type="submit"]:hover {
+    opacity: 0.9;
+}
+
+
+
+
+#loginpage #l2 {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.8s;
+}
+
+#loginpage #l2:hover {
+    color: #F5CBA7;
+}
