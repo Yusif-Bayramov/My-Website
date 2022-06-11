@@ -1,33 +1,195 @@
-    .porh {
-        width: 100%;
-        height: 70vh;
-        position: relative;
-        .potext {
-            padding-top: 8%;
-        }
-        .moused {
-            padding-top: 45%;
+#portfb {
+    background-image: url(../img/pback.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.porh {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    .potext {
+        padding-top: 8%;
+    }
+    .moused {
+        padding-top: 45%;
+    }
+}
+
+#pcont {
+    width: 100%;
+    padding: 0;
+    .card-pc {
+        a.hide {
+            display: none;
         }
     }
-    
-    #pcont {
-        width: 100%;
-        padding: 0;
-        .card-pc {
-            a.hide {
-                display: none;
-            }
-        }
-        .filter {
+    .filter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2%;
+        .fillter-l {
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 2%;
+            overflow: scroll;
+            li {
+                margin-right: 0;
+                font-size: 1.6rem;
+                color: #fff;
+                cursor: pointer;
+                transition: all .3s ease-in-out;
+                text-align: center;
+                padding: 5px 8px;
+            }
+            .activef {
+                border-radius: 10px;
+                transition: all .3s ease-in-out;
+                background-color: #fff;
+                color: #3292ff;
+            }
+        }
+    }
+    .card {
+        text-decoration: none;
+        border: none;
+        width: 50%;
+        height: 270px;
+        position: relative;
+        transition: all .3s ease-in-out;
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(8.6px);
+        -webkit-backdrop-filter: blur(8.6px);
+        &::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(8.6px);
+            -webkit-backdrop-filter: blur(8.6px);
+            opacity: 0;
+            transition: all .3s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &::before {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: all .3s ease-in-out;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f00e";
+            font-size: 3.5rem;
+            color: rgb(255, 255, 255);
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &:hover::after {
+            opacity: 0.5;
+        }
+        &:hover::before {
+            opacity: 1;
+        }
+    }
+    .w1 {
+        background-image: url(../img/oreo.png);
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .w2 {
+        background-image: url(../img/wb4.png);
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .w3 {
+        background-image: url(../img/trade.png);
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .w4 {
+        background-image: url(../img/wdl.png);
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .w5 {
+        background-image: url(../img/wb5.png);
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .w6 {
+        background-image: url(../img/loginform.png);
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .w7 {
+        background-image: url(../img/login2.png);
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .w8 {
+        background-image: url(../img/card3.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .card-ct {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+    .scrl {
+        opacity: 0;
+        transform: scale(0.1);
+        transition: all 1s ease-in-out;
+    }
+    .scrl2 {
+        opacity: 0;
+        transform: scale(0.1);
+        transition: all 1s ease-in-out;
+    }
+    .scrl1 {
+        opacity: 0;
+        transform: scale(0.1);
+        transition: all 1s ease-in-out;
+    }
+    .scrl3 {
+        opacity: 0;
+        transform: scale(0.1);
+        transition: all 1s ease-in-out;
+    }
+}
+
+@media (min-width: 576px) {
+    #pcont {
+        padding: 2.5rem;
+        .filter {
             .fillter-l {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                overflow: scroll;
+                overflow: auto;
                 li {
                     margin-right: 0;
                     font-size: 1.6rem;
@@ -35,175 +197,21 @@
                     cursor: pointer;
                     transition: all .3s ease-in-out;
                     text-align: center;
-                    padding: 5px 8px;
-                }
-                .activef {
-                    border-radius: 10px;
-                    transition: all .3s ease-in-out;
-                    background-color: #fff;
-                    color: #3292ff;
+                    padding: 5px 20px;
                 }
             }
-        }
-        .card {
-            text-decoration: none;
-            border: none;
-            width: 50%;
-            height: 270px;
-            position: relative;
-            transition: all .3s ease-in-out;
-            background: rgba(0, 0, 0, 0.7);
-            border-radius: 16px;
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(8.6px);
-            -webkit-backdrop-filter: blur(8.6px);
-            &::after {
-                content: "";
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                background: rgba(0, 0, 0, 0.7);
-                border-radius: 16px;
-                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-                backdrop-filter: blur(8.6px);
-                -webkit-backdrop-filter: blur(8.6px);
-                opacity: 0;
-                transition: all .3s ease-in-out;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            &::before {
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                opacity: 0;
-                transition: all .3s ease-in-out;
-                font-family: "Font Awesome 5 Free";
-                font-weight: 900;
-                content: "\f00e";
-                font-size: 3.5rem;
-                color: rgb(255, 255, 255);
-                z-index: 1;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            &:hover::after {
-                opacity: 0.5;
-            }
-            &:hover::before {
-                opacity: 1;
-            }
-        }
-        .w1 {
-            background-image: url(../img/oreo.png);
-            background-position: top;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-        .w2 {
-            background-image: url(../img/wb4.png);
-            background-position: top;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-        .w3 {
-            background-image: url(../img/trade.png);
-            background-position: top;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-        .w4 {
-            background-image: url(../img/wdl.png);
-            background-position: top;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-        .w5 {
-            background-image: url(../img/wb5.png);
-            background-position: top;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-        .w6 {
-            background-image: url(../img/loginform.png);
-            background-position: top;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-        .w7 {
-            background-image: url(../img/login2.png);
-            background-position: top;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-        .w8 {
-            background-image: url(../img/card3.png);
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-        .card-ct {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-        }
-        .scrl {
-            opacity: 0;
-            transform: scale(0.1);
-            transition: all 1s ease-in-out;
-        }
-        .scrl2 {
-            opacity: 0;
-            transform: scale(0.1);
-            transition: all 1s ease-in-out;
-        }
-        .scrl1 {
-            opacity: 0;
-            transform: scale(0.1);
-            transition: all 1s ease-in-out;
-        }
-        .scrl3 {
-            opacity: 0;
-            transform: scale(0.1);
-            transition: all 1s ease-in-out;
         }
     }
-    
-    @media (min-width: 576px) {
-        #pcont {
-            padding: 2.5rem;
-            .filter {
-                .fillter-l {
-                    overflow: auto;
-                    li {
-                        margin-right: 0;
-                        font-size: 1.6rem;
-                        color: #fff;
-                        cursor: pointer;
-                        transition: all .3s ease-in-out;
-                        text-align: center;
-                        padding: 5px 20px;
-                    }
-                }
-            }
+    .porh {
+        .potext {
+            padding-top: 10%;
         }
-        .porh {
-            .potext {
-                padding-top: 10%;
-            }
-            .moused {
-                padding-top: 0;
-            }
-        }
-        .porh {
-            width: 100%;
-            height: 100vh;
+        .moused {
+            padding-top: 0;
         }
     }
+    .porh {
+        width: 100%;
+        height: 100vh;
+    }
+}
