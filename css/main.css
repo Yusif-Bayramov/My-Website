@@ -2,11 +2,6 @@
 .porh {
   width: 100%;
   height: 70vh;
-  background-image: url(../img/pback.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   position: relative;
 }
 .porh .potext {
@@ -16,8 +11,8 @@
   padding-top: 45%;
 }
 
-.portbg {
-  background-image: url(../img/pback.jpg) !important;
+#portfb {
+  background-image: url(../img/pback.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -25,11 +20,6 @@
 }
 
 #pcont {
-  background-image: url(../img/pback.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   width: 100%;
   padding: 0;
 }
@@ -408,11 +398,6 @@ nav {
 .homeh {
   width: 100%;
   height: 100vh;
-  background-image: url(../img/hbck.jpg.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   position: relative;
 }
 
@@ -756,11 +741,6 @@ body {
   }
 }
 #content {
-  background-image: url(../img/hbck.jpg.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   padding: 15px 0;
 }
 #content #s-a {
@@ -997,13 +977,6 @@ body {
     min-width: 60%;
   }
 }
-.footere {
-  background-image: url(../img/hbck.jpg.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
 .footere .container {
   width: 100%;
   height: 130px;
@@ -1047,16 +1020,8 @@ body {
   font-size: 1.3rem;
 }
 
-.c-h-c {
+#contb {
   background-image: url(../img/conback.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-.contbg {
-  background-image: url(../img/conback.jpg) !important;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1067,11 +1032,6 @@ body {
   width: 100%;
   height: 100%;
   padding: 1.7rem;
-  background-image: url(../img/conback.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   color: #fff;
   font-size: 1.5rem;
 }
@@ -1221,4 +1181,12 @@ a {
 .spiner span {
   margin-top: 5px;
   color: rgb(255, 255, 255) !important;
+}
+
+#homeb {
+  background-image: url(../img/hbck.jpg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }

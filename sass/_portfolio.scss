@@ -1,11 +1,6 @@
     .porh {
         width: 100%;
         height: 70vh;
-        background-image: url(../img/pback.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
         position: relative;
         .potext {
             padding-top: 8%;
@@ -15,8 +10,8 @@
         }
     }
     
-    .portbg {
-        background-image: url(../img/pback.jpg) !important;
+    #portfb {
+        background-image: url(../img/pback.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -24,11 +19,6 @@
     }
     
     #pcont {
-        background-image: url(../img/pback.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
         width: 100%;
         padding: 0;
         .card-pc {
