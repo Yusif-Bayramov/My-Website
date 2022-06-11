@@ -73,9 +73,17 @@ a {
 }
 
 #homeb {
-    background-image: url(../img/hbck.jpg.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    position: relative;
+}
+
+.video-c {
+    .videob {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -5;
+        object-fit: cover;
+    }
 }
