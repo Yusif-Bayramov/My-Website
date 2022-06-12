@@ -16,3 +16,14 @@ window.addEventListener("scroll", () => {
 
     }
 });
+
+let wps = document.querySelector(".wps");
+
+setTimeout(() => {
+    wps.style.opacity = "1"
+        // wps.style.transform = "translateY(0)";
+    setTimeout(() => {
+        wps.style.opacity = "0"
+            // wps.style.transform = "translateY(20px)";
+    }, 10000);
+}, 5000);
