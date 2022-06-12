@@ -21,9 +21,9 @@ let wps = document.querySelector(".wps");
 
 setTimeout(() => {
     wps.style.opacity = "1"
-        // wps.style.transform = "translateY(0)";
+    wps.style.transform = "translate(0)";
     setTimeout(() => {
         wps.style.opacity = "0"
-            // wps.style.transform = "translateY(20px)";
+        wps.style.transform = "translate(-20px)";
     }, 10000);
 }, 5000);
