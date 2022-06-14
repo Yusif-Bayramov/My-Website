@@ -55,40 +55,36 @@
     }
 }
 
-#html-bar {
-    animation: html-fill 2s forwards;
-}
-
+// #html-bar {
+//     animation: html-fill 2s forwards;
+// }
 @keyframes html-fill {
     100% {
         width: 90%;
     }
 }
 
-#css-bar {
-    animation: css-fill 2s forwards;
-}
-
+// #css-bar {
+//     animation: css-fill 2s forwards;
+// }
 @keyframes css-fill {
     100% {
         width: 75%;
     }
 }
 
-#js-bar {
-    animation: js-fill 2s forwards;
-}
-
+// #js-bar {
+//     animation: js-fill 2s forwards;
+// }
 @keyframes js-fill {
     100% {
         width: 72%;
     }
 }
 
-#jQuery-bar {
-    animation: jQuery-fill 2s forwards;
-}
-
+// #jQuery-bar {
+//     animation: jQuery-fill 2s forwards;
+// }
 @keyframes jQuery-fill {
     100% {
         width: 78%;

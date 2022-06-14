@@ -576,7 +576,7 @@ body {
   align-items: center;
   justify-content: center;
   z-index: 2;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 .lefti-c .leftiocn {
   display: flex;
@@ -936,37 +936,21 @@ body {
   background-color: #0d96e0;
 }
 
-#html-bar {
-  animation: html-fill 2s forwards;
-}
-
 @keyframes html-fill {
   100% {
     width: 90%;
   }
 }
-#css-bar {
-  animation: css-fill 2s forwards;
-}
-
 @keyframes css-fill {
   100% {
     width: 75%;
   }
 }
-#js-bar {
-  animation: js-fill 2s forwards;
-}
-
 @keyframes js-fill {
   100% {
     width: 72%;
   }
 }
-#jQuery-bar {
-  animation: jQuery-fill 2s forwards;
-}
-
 @keyframes jQuery-fill {
   100% {
     width: 78%;
@@ -1002,6 +986,7 @@ body {
   font-size: 1.5rem;
 }
 .footere .ficon {
+  transition: all 1s ease-in-out;
   display: flex;
   align-content: center;
   justify-content: center;

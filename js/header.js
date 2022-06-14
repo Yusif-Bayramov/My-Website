@@ -18,10 +18,6 @@ window.addEventListener("scroll", () => {
     }
 });
 
-
-
-
-
 function sliderfunc() {
     if (counter < max) {
         counter++;
