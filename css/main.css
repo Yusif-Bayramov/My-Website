@@ -1052,6 +1052,10 @@ body {
   color: #fff;
   padding: 10px;
   font-size: 1.4rem;
+  position: relative;
+}
+#ccont .form-c textarea {
+  margin-top: 5%;
 }
 #ccont .form-c .btn {
   margin-top: 2%;
@@ -1065,7 +1069,20 @@ body {
 #ccont .form-c form {
   flex-basis: 100%;
 }
+#ccont .form-c .labeli {
+  position: absolute;
+  z-index: 2;
+  padding: 0.5rem;
+  transition: all 0.6s ease-in-out;
+}
+#ccont .form-c .labeli2 {
+  position: absolute;
+  z-index: 2;
+  padding: 0.5rem;
+  transition: all 0.6s ease-in-out;
+}
 #ccont .form-group {
+  margin-top: 15%;
   margin-bottom: 2%;
 }
 #ccont #contact {
@@ -1084,6 +1101,9 @@ body {
     align-items: center;
     justify-content: space-evenly;
     flex-direction: row;
+  }
+  #ccont .form-group {
+    margin-top: 0;
   }
   #ccont .address {
     text-align: start;

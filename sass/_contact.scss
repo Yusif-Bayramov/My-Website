@@ -45,6 +45,10 @@
             color: #fff;
             padding: 10px;
             font-size: 1.4rem;
+            position: relative;
+        }
+        textarea {
+            margin-top: 5%;
         }
         .btn {
             margin-top: 2%;
@@ -58,8 +62,21 @@
         form {
             flex-basis: 100%;
         }
+        .labeli {
+            position: absolute;
+            z-index: 2;
+            padding: 0.5rem;
+            transition: all .6s ease-in-out;
+        }
+        .labeli2 {
+            position: absolute;
+            z-index: 2;
+            padding: 0.5rem;
+            transition: all .6s ease-in-out;
+        }
     }
     .form-group {
+        margin-top: 15%;
         margin-bottom: 2%;
     }
     #contact {
@@ -80,6 +97,9 @@
             align-items: center;
             justify-content: space-evenly;
             flex-direction: row;
+        }
+        .form-group {
+            margin-top: 0;
         }
         .address {
             text-align: start;
