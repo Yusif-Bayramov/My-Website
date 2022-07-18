@@ -156,6 +156,12 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+#pcont .w9 {
+  background-image: url(../img/proneo.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 #pcont .card-ct {
   display: flex;
   align-items: center;
