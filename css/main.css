@@ -162,6 +162,12 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+#pcont .w10 {
+  background-image: url(../img/blackdream.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 #pcont .card-ct {
   display: flex;
   align-items: center;
