@@ -57,6 +57,19 @@ p {
     margin-bottom: 0 !important;
 }
 
+.bg {
+    background: #5433FF;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
 .spiner {
     /* From https://css.glass */
     background: rgba(6, 6, 6, 0.77);
